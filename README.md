@@ -7,7 +7,22 @@ To write a program to find the LU Decomposition of a matrix.
 1. Hardware – PCs
 2. Anaconda – Python 3.7 Installation / Moodle-Code Runner
 
-## Algorithm
+## Algorithm01
+1.Input the matrix:
+  Read a matrix A from the user input.
+2.Perform LU Decomposition:
+  Call the LU decomposition function (lu(matrix)) to get the L (lower triangular) and U (upper triangular) matrices.
+3.Extract matrices:
+  The lu() function returns three outputs:
+  The permutation matrix P (which is not required for this task).
+  The lower triangular matrix L.
+  The upper triangular matrix U.
+4.Display matrices:
+  Output the L matrix (lower triangular matrix).
+  Output the U matrix (upper triangular matrix).
+
+
+## Algorithm02
 1. Define the package as scipy.linalg import lu.
 2. Get input from user and print L and U matrix by 'print' .
 3. Define a package as "from scipy.linalg import lu_factor, lu_solve" and create the variable as 'X' include the package in that variable.
@@ -50,7 +65,10 @@ print(solution)
 ```
 
 ## Output:
-![Screenshot from 2024-12-13 11-44-52](https://github.com/user-attachments/assets/4627dc72-7673-4915-99d2-b8aebe82fef7)
-![Screenshot from 2024-12-13 11-45-04](https://github.com/user-attachments/assets/f08800b7-dd97-4387-8339-81d51e5668bf)
-## Result:Thus the program to find the LU Decomposition of a matrix is written and verified using python programming.
+![lu decomposition]()
+![Alt text](<Screenshot from 2024-12-08 13-28-38.png>)
+
+
+## Result:
+Thus the program to find the LU Decomposition of a matrix is written and verified using python programming.
 
