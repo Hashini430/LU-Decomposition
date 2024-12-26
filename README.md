@@ -7,37 +7,27 @@ To write a program to find the LU Decomposition of a matrix.
 1. Hardware – PCs
 2. Anaconda – Python 3.7 Installation / Moodle-Code Runner
 
-## Algorithm01
-1.Input the matrix:
-  Read a matrix A from the user input.
-2.Perform LU Decomposition:
-  Call the LU decomposition function (lu(matrix)) to get the L (lower triangular) and U (upper triangular) matrices.
-3.Extract matrices:
-  The lu() function returns three outputs:
-  The permutation matrix P (which is not required for this task).
-  The lower triangular matrix L.
-  The upper triangular matrix U.
-4.Display matrices:
-  Output the L matrix (lower triangular matrix).
-  Output the U matrix (upper triangular matrix).
-```
-## Algorithm02
-1.Input the Matrix and the Vector:
-  Read the matrix of size nxn and the vector b of nx1
-  The matrix A represents the system of linear equations.
-  The vector b contains the constants on the right-hand side of the equations.
-2.LU Decomposition:
-  Perform LU decomposition of the matrix A to obtain two matrices:
-  L (lower triangular matrix)
-  U (upper triangular matrix)
-  This decomposition can be achieved using the lu_factor function from scipy.linalg.
-3.Solve the System:
-  Use the LU decomposition to solve the system of linear equations Ax=b.
-  This is done using the lu_solve function, which uses the previously computed LU matrices to find the solution vector x.
-4.Output the Solution:
-  Print the solution vector x, which represents the solution to the system of linear equations.
-  
+## Algorithm
+(i) To find the L and U matrix
 
+1. Take the input as a square matrix A. 
+2. Convert the input into a NumPy array for mathematical operations.
+3. Use the lu function from the scipy.linalg library to compute the LU decomposition of matrix A, which returns permutation matrix P, lower triangular matrix L, and upper triangular matrix U.
+4. Print the variable 'L' and 'U'.
+
+
+(ii) To find the LU Decomposition of a matrix
+
+1. Define the package as scipy.linalg import lu.
+2. Take two inputs from the user:
+   A: A square matrix (coefficient matrix).
+   b: A vector (right-hand side of the linear equations).
+3. Convert the inputs into NumPy arrays for numerical operations.
+4. Use the lu_factor function from scipy.linalg to compute the LU decomposition of matrix A. This returns:
+   lu: Combined LU decomposition.
+   piv: Pivot indices.
+5. Use lu_solve with the LU decomposition (lu, piv) and vector b to compute the solution vector x.
+6. Print the variable 'X'
 ## Program:
 (i) To find the L and U matrix
 ```
